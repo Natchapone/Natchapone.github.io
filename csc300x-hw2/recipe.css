@@ -1,0 +1,97 @@
+/*This css file contains styling properties for the pie.html file
+which are replicated from the assignment instructions*/
+body {
+    background-image: url(pictures/silverware.jpg);
+}
+
+#header {
+    display: inline-flex;
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: Lucida Sans Unicode, Helvetica, Aria;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 2px solid;
+}
+
+.tight-background {
+    text-align: center;
+}
+
+h1 {
+    display: inline-flex;
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-size: 22pt;
+    font-family: Lucida Sans Unicode, Helvetica, Arial;
+    font: bold;
+    border-bottom: 2px solid;
+
+}
+
+#paragraph {
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond;
+
+}
+
+#emty-paragraph {
+    border-bottom: 2px solid rgba(175, 175, 175, 0.986);
+}
+
+#copyright {
+    font-family: monospace;
+}
+
+.indented-directions {
+    margin-left: 21pt;
+}
+
+ul {
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond;
+}
+
+link {
+    color: #A4A400;
+}
+
+li {
+    list-style-image: url(pictures/pie_icon.gif);
+}
+
+.tooltip {
+    position: relative;
+    border-bottom: 1px dotted;
+    text-decoration: underline;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.user-comment {
+    background-color: #FFFFA8;
+    font-style: italic;
+    margin-left: 22pt;
+    margin-right: 22pt;
+}
+
+a {
+    color: #A4A400;
+}

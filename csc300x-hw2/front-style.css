@@ -1,0 +1,37 @@
+/*this css file contais original styling properties for the index.html file*/
+body {
+    background-color: beige;
+    margin: 0;
+
+}
+
+.container {
+    font-family: fantasy;
+    color: black;
+}
+
+header {
+    background-color: darkgray;
+    font-size: 40pt;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+}
+
+main {
+    font-size: 15pt;
+}
+#textbox {
+    text-align: center;
+    display: inline-flex;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    
+}
+
+#pie {
+    font-size: 28pt;
+    text-align: center;
+    padding-top: 200px;
+}
