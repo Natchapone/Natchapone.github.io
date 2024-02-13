@@ -7,11 +7,11 @@ for (let index = 0; index < pic.length; index++) {
 function expand(event) {
     const smallImage = event.currentTarget;
     const bigImage = document.querySelector(".big");
+    const hiddenText = document.querySelector(".hide");
 
-    smallImage.classList.remove('small');
-    smallImage.classList.add('big');
-    bigImage.classList.remove('big');
-    bigImage.classList.add('small');
+    smallImage.classList.replace('small', 'big');
+    bigImage.classList.replace('big', 'small');
+    hiddenText.classList.replace('hide', 'shown');
 }
 
 
