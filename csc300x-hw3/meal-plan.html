@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="styles/meal-plan.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="meal-selection">
+            <h2>Select Your Meals</h2>
+            <div id="restaurant">
+                <p id="restaurant-name">
+                    <b>Jimmy John's</b>
+                </p>
+                <div class="meal-item">
+                    <label for="burger">#7 SPICEY EAST COAST ITALIAN - $8.75</label>
+                    <button id="box-btn">Add</button>
+                </div>
+
+                <div class="meal-item">
+                    <label for="burger">#16 CLUB LULU - $8.75</label>
+                    <button id="box-btn">Add</button>
+                </div>
+
+                <div class="meal-item">
+                    <label for="burger">#2 BIG JOHN - $7.50</label>
+                    <button id="box-btn">Add</button>
+                </div>
+            </div>
+
+            <div id="restaurant">
+                <p id="restaurant-name">
+                    <b>Chick-fil-A</b>
+                </p>
+                <div class="meal-item">
+                    <label for="burger">Chick-fil-A Deluxe Sandwich - $5.95</label>
+                    <button id="box-btn">Add</button>
+                </div>
+                <div class="meal-item">
+                    <label for="burger">Grilled Chicken Sandwich - $6.89</label>
+                    <button id="box-btn">Add</button>
+                </div>
+                <div class="meal-item">
+                    <label for="burger">Chick-fil-A Chicken Sandwich - $5.25</label>
+                    <button id="box-btn">Add</button>
+                </div>
+            </div>
+
+            <div id="restaurant">
+                <p id="restaurant-name">
+                    <b>Chipotle</b>
+                </p>
+                <div class="meal-item">
+                    <label for="burger">BurgerBalanced Macros Bowl - $11.25</label>
+                    <button id="box-btn">Add</button>
+                </div>
+                <div class="meal-item">
+                    <label for="burger">Wholesome Bowl - $11.25</label>
+                    <button id="box-btn">Add</button>
+                </div>
+                <div class="meal-item">
+                    <label for="burger">High Protein Bowl - $12.00</label>
+                    <button id="box-btn">Add</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-summary">
+            <h2>Your Order</h2>
+            <ul id="selected-meals"></ul>
+            <p>Total Cost: $<span id="total-cost">0</span></p>
+            <button id="add-order">Add Another Order</button>
+        </div>
+    </div>
+</body>

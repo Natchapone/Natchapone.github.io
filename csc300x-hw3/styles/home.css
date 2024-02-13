@@ -1,0 +1,118 @@
+body {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {}
+
+header {
+    display: flex;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35pt;
+}
+
+pre {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+#introduction {
+    display: flex;
+    justify-content: center;
+    font-size: 12pt;
+    padding-bottom: 100px;
+}
+
+#selec-head {
+    display: flex;
+    justify-content: center;
+    font-size: 22pt;
+    padding-bottom: 30px;
+}
+
+#selec-descript {
+    display: flex;
+    justify-content: center;
+    font-size: 13pt;
+    padding-bottom: 100px;
+}
+
+.selec-img {
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 10pt;
+    align-items: center;
+}
+
+.selection {
+    padding-bottom: 200px;
+}
+
+
+#JJ1 {
+    padding-top: 50px;
+}
+
+#JJ2 {
+    padding-top: 60px;
+}
+
+#JJ3 {
+    padding-top: 57px;
+}
+
+.hide {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+
+.small {
+    height: 90%;
+    width: 90%;
+}
+
+.big {
+    height: 140%;
+    width: 140%;
+}
+
+.small2 {
+    height:50% ;
+    width: 50% ;
+}
+
+.big2 {
+    height: 80%;
+    width: 80%;
+}
+
+#ChickPara {
+    padding-top: 15%;
+}
+#ChipPara {
+
+}
+
+.buildLink {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.mealLink {
+    font-size: 30pt;
+    text-decoration: none;
+    color: black;
+}

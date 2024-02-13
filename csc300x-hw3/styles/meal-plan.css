@@ -1,0 +1,35 @@
+body {}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+#meal-selection {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+#meal-selection h2 {
+    margin-top: 0;
+}
+
+#order-summary {
+    flex: 1;
+    padding-left: 20px;
+}
+
+#order-summary h2 {
+    margin-top: 0;
+}
+
+.meal-item {
+    margin-bottom: 10px;
+}
+
+#restaurant-name {
+    font-size: 15pt;
+}
