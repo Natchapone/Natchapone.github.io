@@ -2,76 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
     <title>Meal Plan</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="styles/meal-plan.css" />
 </head>
 <script src="script-meal-plan.js" defer> </script>
 
 <body>
     <div id="container">
-        <div id="meal-selection">
-            <h2>Select Your Meals</h2>
-            <div id="restaurant">
-                <p id="restaurant-name">
-                    <b>Jimmy John's</b>
-                </p>
-                <div class="meal-item">
-                    <label for="SECI">#7 SPICEY EAST COAST ITALIAN - $8.75</label>
-                    <button id="SECI">Add</button>
+        <div id="inner-container">
+            <div id="meal-selection">
+                <h2>Select Your Meals</h2>
+                <div id="restaurant">
+                    <p id="restaurant-name">
+                        <b>Jimmy John's</b>
+                    </p>
+                    <div class="mealItem" data-price="8.75">
+                        <label>#7 SPICEY EAST COAST ITALIAN - $8.75</label>
+                        <button onclick=addMeal(this)>Add</button>
+                    </div>
+
+                    <div class="mealItem" data-price="8.75">
+                        <label>#16 CLUB LULU - $8.75</label>
+                        <button onclick=addMeal(this)>Add</button>
+                    </div>
+
+                    <div class="mealItem" data-price="7.50">
+                        <label>#2 BIG JOHN - $7.50</label>
+                        <button onclick=addMeal(this)>Add</button>
+                    </div>
                 </div>
 
-                <div class="meal-item">
-                    <label for="ClubLulu">#16 CLUB LULU - $8.75</label>
-                    <button id="ClubLulu">Add</button>
+                <div id="restaurant">
+                    <p id="restaurant-name">
+                        <b>Chick-fil-A</b>
+                    </p>
+
+                    <div class="mealItem" data-price="5.59">
+                        <label>Chick-fil-A Deluxe Sandwich - $5.95</label>
+                        <button onclick=addMeal(this)>Add</button>
+                    </div>
+                    <div class="mealItem" data-price="6.89">
+                        <label>Grilled Chicken Sandwich - $6.89</label>
+                        <button onclick=addMeal(this)>Add</button>
+                    </div>
+                    <div class="mealItem" data-price="5.25">
+                        <label>Chick-fil-A Chicken Sandwich - $5.25</label>
+                        <button onclick=addMeal(this)>Add</button>
+                    </div>
                 </div>
 
-                <div class="meal-item">
-                    <label for="BJohn">#2 BIG JOHN - $7.50</label>
-                    <button id="BJohn">Add</button>
+                <div id="restaurant">
+                    <p id="restaurant-name">
+                        <b>Chipotle</b>
+                    </p>
+                    <div class="mealItem" data-price="11.25">
+                        <label>Balanced Macros Bowl - $11.25</label>
+                        <button onclick=addMeal(this)>Add</button>
+                    </div>
+                    <div class="mealItem" data-price="11.25">
+                        <label>Wholesome Bowl - $11.25</label>
+                        <button onclick=addMeal(this)>Add</button>
+                    </div>
+                    <div class="mealItem" data-price="12.00">
+                        <label>High Protein Bowl - $12.00</label>
+                        <button onclick=addMeal(this)>Add</button>
+                    </div>
                 </div>
             </div>
-
-            <div id="restaurant">
-                <p id="restaurant-name">
-                    <b>Chick-fil-A</b>
-                </p>
-                <div class="meal-item">
-                    <label for="Dsand">Chick-fil-A Deluxe Sandwich - $5.95</label>
-                    <button id="Dsand">Add</button>
-                </div>
-                <div class="meal-item">
-                    <label for="GCS">Grilled Chicken Sandwich - $6.89</label>
-                    <button id="GCS">Add</button>
-                </div>
-                <div class="meal-item">
-                    <label for="CCS">Chick-fil-A Chicken Sandwich - $5.25</label>
-                    <button id="CCS">Add</button>
-                </div>
+            <div class="orderSummary">
+                <h2>Your Order</h2>
+                <div id="selectedMeal"></div>
+                <p>Total: $<span id="totalCost">0</span></p>
             </div>
-
-            <div id="restaurant">
-                <p id="restaurant-name">
-                    <b>Chipotle</b>
-                </p>
-                <div class="meal-item">
-                    <label for="BB">Balanced Macros Bowl - $11.25</label>
-                    <button id="BB">Add</button>
-                </div>
-                <div class="meal-item">
-                    <label for="WB">Wholesome Bowl - $11.25</label>
-                    <button id="WB">Add</button>
-                </div>
-                <div class="meal-item">
-                    <label for="HPB">High Protein Bowl - $12.00</label>
-                    <button id="HPB">Add</button>
-                </div>
-            </div>
-        </div>
-        <div id="order-summary">
-            <h2>Your Order</h2>
-            <ul id="selected-meals"></ul>
-            <p>Total Cost: $<span id="total-cost">0</span></p>
         </div>
     </div>
 </body>

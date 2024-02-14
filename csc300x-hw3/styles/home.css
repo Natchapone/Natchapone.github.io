@@ -1,4 +1,5 @@
 body {
+    background-color: lightgray;
     width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -85,18 +86,9 @@ p {
 }
 
 .big {
-    height: 140%;
-    width: 140%;
-}
-
-.small2 {
-    height:50% ;
-    width: 50% ;
-}
-
-.big2 {
-    height: 80%;
-    width: 80%;
+    height: auto;
+    width: 120%;
+    object-fit: fill;
 }
 
 #ChickPara {

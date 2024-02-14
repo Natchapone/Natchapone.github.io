@@ -1,10 +1,24 @@
-body {}
+body {
+    background-color: lightgrey;
+    display: flex;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #container {
+    border: dotted darkgreen;
+    border-radius: 40px;
+    height: 700px;
+    width: 2000px;
+    background-color: lightgreen;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 20px;
+    margin: 100px;
+}
+#inner-container {
+    justify-content: center;
+    display: flex;
+    margin: 100px;
 }
 
 #meal-selection {
@@ -13,20 +27,16 @@ body {}
     border-right: 1px solid black;
 }
 
-#meal-selection h2 {
+h2 {
     margin-top: 0;
 }
 
-#order-summary {
+.orderSummary {
     flex: 1;
     padding-left: 20px;
 }
 
-#order-summary h2 {
-    margin-top: 0;
-}
-
-.meal-item {
+.mealItem {
     margin-bottom: 10px;
 }
 
