@@ -1,25 +1,28 @@
 const pic = document.querySelectorAll('img');
+
 for (let index = 0; index < pic.length; index++) {
     const element = pic[index];
     element.addEventListener('click', expand);
-    element.addEventListener('click', expandTxt);
 }
 
 function expand(event) {
-    const smallImage = event.currentTarget;
-    const bigImage = document.querySelector(".big");
+    const clickedImg = event.currentTarget;
+    const images = document.querySelectorAll('img');
+    const texts = document.querySelectorAll('.hide');
 
-    smallImage.classList.replace('small', 'big');
-    bigImage.classList.replace('big', 'small');
+    for (let i = 0; i < images.length; i++) {
+        images[i].classList.replace('big', 'small');
+    }
 
+    clickedImg.classList.replace('small', 'big');
+
+    for (let i = 0; i < texts.length; i++) {
+        texts[i].style.display = 'none';
+    }
+    const txtId = clickedImg.dataset.textId;
+    const txt = document.getElementById(txtId);
+
+    if (txt) {
+        txt.style.display = 'block';
+    }
 }
-
-function expandTxt(event) {
-    const hiddenText = document.querySelector(".hide");
-    const shownText = document.querySelector(".shown");
-
-    hiddenText.classList.replace('hide', 'shown');
-    shownText.classList.replace('shown', 'hide');
-}
-
-
