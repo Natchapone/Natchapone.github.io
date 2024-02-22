@@ -43,58 +43,41 @@ body {
     height: 100px;
 }
 
-#rock {
+#pChoiceBox {
     margin: 5px;
     border: 2px solid lightgray;
     border-radius: 10px;
 }
 
-#paper {
+#cChoiceBox {
     margin: 5px;
     border: 2px solid lightgray;
     border-radius: 10px;
 }
 
-#scissors {
-    margin: 5px;
-    border: 2px solid lightgray;
-    border-radius: 10px;
-}
-
-#questionMark {
-    margin: 5px;
-    border: 2px solid lightgray;
-    border-radius: 10px;
-}
-
-#rockOutter {
+#hidden {
     border: 2px solid;
     border-radius: 6px;
     border-color: white;
 }
 
-#paperOutter {
+#highlighted {
     border: 2px solid;
     border-radius: 6px;
-    border-color: white;
+    border-color: red;
 }
-
-#scissorsOutter {
-    border: 2px solid;
-    border-radius: 6px;
-    border-color: white;
-}
-
-#questionOutter {
-    border: 2px solid;
-    border-radius: 6px;
-    border-color: white;
-}
-
 
 #result {
+    display: flex;
+    align-items: center;
     margin-left: 30px;
     font-weight: bold;
+}
+
+#resultTxt {
+    margin-left: 5px;
+    font-weight: bold;
+    width: 500px;
 }
 
 .resultBox button {
@@ -102,6 +85,5 @@ body {
     border-radius: 5px;
     background-color: white;
     padding: 10px 25px;
-    margin-left: 550px;
     cursor: pointer;
 }
