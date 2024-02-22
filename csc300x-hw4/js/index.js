@@ -34,9 +34,9 @@ function shuffle() {
             cOption.src = throws[Math.floor(Math.random() * throws.length)];
 
             const cThrowSrc = cOption.src;
-            const rockSrc = "http://127.0.0.1:3000/csc300x-hw4/images/rock.PNG";
-            const paperSrc = "http://127.0.0.1:3000/csc300x-hw4/images/paper.PNG";
-            const scissorsSrc = "http://127.0.0.1:3000/csc300x-hw4/images/scissors.PNG";
+            const rockSrc = "https://natchapone.github.io/csc300x-hw4/images/rock.PNG";
+            const paperSrc = "https://natchapone.github.io/csc300x-hw4/images/paper.PNG";
+            const scissorsSrc = "https://natchapone.github.io/csc300x-hw4/images/scissors.PNG";
             const winTxt = document.createTextNode("You Win!");
             const loseTxt = document.createTextNode("You Lose!");
             const drawTxt = document.createTextNode("It's a Draw!");
@@ -47,22 +47,22 @@ function shuffle() {
                 document.getElementById("resultTxt").appendChild(drawTxt);
             }
             else if (cThrowSrc === rockSrc && pThrowSrc === paperSrc) {
-                document.getElementById("resultTxt").appendChild(winTxt)
+                document.getElementById("resultTxt").appendChild(winTxt);
             }
             else if (cThrowSrc === rockSrc && pThrowSrc === scissorsSrc) {
-                document.getElementById("resultTxt").appendChild(loseTxt)
+                document.getElementById("resultTxt").appendChild(loseTxt);
             }
             else if (cThrowSrc === paperSrc && pThrowSrc === rockSrc) {
-                document.getElementById("resultTxt").appendChild(loseTxt)
+                document.getElementById("resultTxt").appendChild(loseTxt);
             }
             else if (cThrowSrc === paperSrc && pThrowSrc === scissorsSrc) {
-                document.getElementById("resultTxt").appendChild(winTxt)
+                document.getElementById("resultTxt").appendChild(winTxt);
             }
             else if (cThrowSrc === scissorsSrc && pThrowSrc === rockSrc) {
-                document.getElementById("resultTxt").appendChild(winTxt)
+                document.getElementById("resultTxt").appendChild(winTxt);
             }
             else if (cThrowSrc === scissorsSrc && pThrowSrc === paperSrc) {
-                document.getElementById("resultTxt").appendChild(loseTxt)
+                document.getElementById("resultTxt").appendChild(loseTxt);
             }
         }
 
