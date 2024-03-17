@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+.container {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin: 20px;
+}
+
+.searchbar {
+    width: 100%;
+    max-width: 400px;
+    height: 10px;
+    background: none;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(63, 62, 62);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.searchbar input {
+    background: none;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: gray;
+}
+
+::placeholder {
+    color: gray;
+}
+
+
+.searchbar button img {
+    width: 20px;
+}
+
+.searchbar button {
+    border: 0;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    background: none;
+    cursor: pointer;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repo {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 280px;
+    height: auto;
+    background-color: white;
+}
+
+.repo img {
+    width: 35px;
+    height: 35px;
+}
+
+
+.repo h2 {
+    display: flex;
+    margin-top: 0;
+}
+
+.link {
+    word-break: break-all;
+}
+
+.repo h4 {
+    font-weight: normal;
+}
+
+
+p {
+    margin: 0;
+}
+
+.repo a {
+    text-decoration: none;
+}
